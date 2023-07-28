@@ -16,13 +16,14 @@ class ToolsWidget extends StatelessWidget {
           "Outils",
           style: largeTitle,
         ),
-        gapW300,
+        const Spacer(),
         SizedBox(
-            width: 600,
-            child: Text(
-              profilDescription,
-              style: mediumText,
-            )),
+          width: 500,
+          child: Text(
+            profilDescription,
+            style: mediumText,
+          ),
+        ),
       ],
     );
   }

@@ -16,14 +16,14 @@ class ProfilWidget extends StatelessWidget {
           "Profil",
           style: largeTitle,
         ),
-        gapW300,
-        Container(
-            color: Colors.red,
-            width: 600,
-            child: Text(
-              profilDescription,
-              style: mediumText,
-            )),
+        const Spacer(),
+        SizedBox(
+          width: 500,
+          child: Text(
+            profilDescription,
+            style: mediumText,
+          ),
+        ),
       ],
     );
   }

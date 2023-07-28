@@ -42,7 +42,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
           onPressed: () => {
             setState(() => _isActivateTab2 = !_isActivateTab2),
             setState(() => _isActivateTab1 = !_isActivateTab1),
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MyInfosPage()))
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyInfosPage()))
           },
           child: Text(
             "À propos",

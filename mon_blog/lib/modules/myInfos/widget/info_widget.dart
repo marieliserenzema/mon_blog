@@ -3,8 +3,10 @@ import 'package:mon_blog/theme/app_sizes.dart';
 import 'package:mon_blog/theme/app_style.dart';
 import 'package:mon_blog/theme/text.dart';
 
-class AbilityWidget extends StatelessWidget {
-  const AbilityWidget({super.key});
+class InfoWidget extends StatelessWidget {
+  const InfoWidget({super.key, required this.title, required this.description});
+  final String title;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -13,16 +15,17 @@ class AbilityWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Compétence",
+          title,
           style: largeTitle,
         ),
-        gapW300,
+        const Spacer(),
         SizedBox(
-            width: 600,
-            child: Text(
-              profilDescription,
-              style: mediumText,
-            )),
+          width: 500,
+          child: Text(
+            description,
+            style: mediumText,
+          ),
+        ),
       ],
     );
   }

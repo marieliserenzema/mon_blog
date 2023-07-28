@@ -13,17 +13,17 @@ class ExperienceWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Experience",
+          "Expériences",
           style: largeTitle,
         ),
-        gapW300,
-        Container(
-            color: Colors.red,
-            width: 600,
-            child: Text(
-              profilDescription,
-              style: mediumText,
-            )),
+        const Spacer(),
+        SizedBox(
+          width: 500,
+          child: Text(
+            profilDescription,
+            style: mediumText,
+          ),
+        ),
       ],
     );
   }

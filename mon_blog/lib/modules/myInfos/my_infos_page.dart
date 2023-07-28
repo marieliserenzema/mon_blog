@@ -38,11 +38,15 @@ class MyInfosPage extends StatelessWidget {
               style: extraLargeTitle,
             ),
             gapH64,
-            for (int i = 0; i < _caseDescriptionList.length; i++)
-              InfoWidget(
-                title: _caseNameList[i],
-                description: _caseDescriptionList[i],
-              ),
+            Column(
+              children: [
+                for (int i = 0; i < _caseDescriptionList.length; i++)
+                  InfoWidget(
+                    title: _caseNameList[i],
+                    description: _caseDescriptionList[i],
+                  ),
+              ],
+            ),
             gapH64,
             FooterWidget(),
           ]),
